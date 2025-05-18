@@ -1,19 +1,6 @@
 "use strict";
 var _a;
-const heroes = [
-    {
-        id: 1,
-        name: "batman",
-        owner: "DC",
-    },
-    {
-        id: 1,
-        name: "SUPERMAN",
-        owner: "DC",
-    },
-];
-const findHeroById = (id) => {
-    return heroes.find((hero) => hero.id === id);
-};
-const hero = findHeroById(4);
-console.log((_a = hero === null || hero === void 0 ? void 0 : hero.name) !== null && _a !== void 0 ? _a : 'hero not found');
+Object.defineProperty(exports, "__esModule", { value: true });
+const hero_services_1 = require("./services/hero.services");
+const hero = (0, hero_services_1.findHeroById)(4);
+console.log((_a = hero === null || hero === void 0 ? void 0 : hero.name) !== null && _a !== void 0 ? _a : 'hero not found!!');
